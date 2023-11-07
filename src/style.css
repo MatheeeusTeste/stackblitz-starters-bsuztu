@@ -1,0 +1,158 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 80%;
+  max-width: 400px;
+  border: 2px solid #007bff;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff6600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #000080;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #000080;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #000080;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Botão de Compra */
+li button.buy-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+li button.buy-button:hover {
+  background-color: #45a049;
+}
+
+li button.buy-button .cart-icon {
+  margin-right: 5px;
+}
+
+li button.remove-button {
+  background-color: #FF6347;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-flex;
+  align-items: center;
+}
+
+li button.remove-button:hover {
+  background-color: #ff4735;
+}
+
+li button.remove-button .trash-icon {
+  margin-right: 5px;
+}
+
+button.add-button, button.remove-button {
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button.add-button:hover, button.remove-button:hover {
+  background-color: #007bff;
+  transform: scale(1.1); 
+}
+
+
+button.add-button::before {
+  content: '+';
+}
+
+button.remove-button::before {
+  content: '-';
+}
+
+
+li.comprado {
+  margin-bottom: 20px;
+}
+
+li.comprado {
+  border: 2px solid #4CAF50;
+  background-color: #E8F6E8; 
+}
+
+button.comprar-button::before {
+  content: '\f07a'; 
+  font-family: 'Font Awesome 5 Free'; 
+  margin-right: 5px;
+}
